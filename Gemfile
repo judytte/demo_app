@@ -45,9 +45,11 @@ group :development do
   gem 'web-console', '>= 3.3.0'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem // IMPORTANTE sin esta linea no se puede arrancar el servidor
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+#IMPORTANT en caso que salga el error ExecJS::ProgramError in Users#index en localhost:3000/users
+#gem 'coffee-script-source', '= 1.12.2'
 
 group :production do
 	gem 'pg', '0.12.2'
